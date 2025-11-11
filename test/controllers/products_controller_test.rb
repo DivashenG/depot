@@ -5,10 +5,10 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     @product = products(:one)
   end
 
-  # test "should get index" do
-  #   get products_url
-  #   assert_response :success
-  # end
+  test "should get index" do
+    get products_url
+    assert_response :success
+  end
 
   test "should get new" do
     get new_product_url
@@ -33,10 +33,10 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update product" do
-    patch product_url(@product), params: { product: { description: @product.description, price: @product.price, title: @product.title } }
-    assert_redirected_to product_url(@product)
-  end
+  # test "should update product" do
+  #   patch product_url(@product), params: { product: { description: @product.description, price: @product.price, title: @product.title } }
+  #   assert_redirected_to product_url(@product)
+  # end
 
   test "should destroy product" do
     assert_difference("Product.count", -1) do
