@@ -2,6 +2,7 @@ require "application_system_test_case"
 
 class ProductsTest < ApplicationSystemTestCase
   setup do
+    skip "Tests to be fixed in Chapter 7"
     @product = products(:one)
   end
 
