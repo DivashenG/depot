@@ -1,7 +1,6 @@
 require "test_helper"
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
-
   setup do
     skip "Tests to be fixed in Chapter 7"
     @product = products(:one)
